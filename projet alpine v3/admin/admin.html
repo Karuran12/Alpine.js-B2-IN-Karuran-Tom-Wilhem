@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Admin</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div x-data="admin" x-init="init()">
+    <h1>Page Admin - Liste des utilisateurs</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Mot de passe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <template x-for="user in users" :key="user.email">
+          <tr>
+            <td x-text="user.nom"></td>
+            <td x-text="user.email"></td>
+            <td x-text="user.password"></td>
+          </tr>
+        </template>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="../main.js" type="module"></script>
+</body>
+</html>

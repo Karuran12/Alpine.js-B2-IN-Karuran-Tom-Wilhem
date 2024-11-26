@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="film">
+    <meta name="author" content="Wilhem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main x-data="login_page">
+        <div x-show="section === 'login'">
+            <h2>Connexion</h2>
+        <p x-text="message"></p>
+        <form class="form" x-on:submit="submitHandler">
+            <input  placeholder="Entrez votre email" class="" id="email" type="email" required/> 
+            <input  placeholder="Entrez votre mot de passe" class="" id="password" type="password" required/>
+            <button type="submit">Valider</button>
+            <button type="reset">Réinitialiser</button>
+
+            <div class="toggle-section">
+                <p>Pas de compte ? <a href="#" x-on:click.prevent="section = 'signup'">Créer un compte</a></p>
+            </div>
+            </form>
+        </div>
+           
+        
+        <div x-show="section === 'signup'" x-cloak>
+            <h2>Créer un compte</h2>
+            <p x-text="message"></p>
+            <form class="form" x-on:submit.prevent="signupHandler">
+                <input placeholder="Entrez votre nom" id="signup-nom" type="text" />
+                <input placeholder="Entrez votre email" id="signup-email" type="email" />
+                <input placeholder="Entrez votre mot de passe" id="signup-password" type="password" />
+                <input placeholder="Confirmez votre mot de passe" id="confirm-password" type="password" />
+                <button type="submit">S'inscrire</button>
+                <button type="reset">Réinitialiser</button>
+            </form>
+            <div class="toggle-section">
+                <p>Déjà un compte ? <a href="#" x-on:click.prevent="section = 'login'">Se connecter</a></p>
+            </div>
+        </div>
+        
+    </main>
+
+    
+    <aside id="notification"></aside>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>

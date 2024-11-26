@@ -1,0 +1,32 @@
+[
+  {
+    "nom": "HO",
+    "email": "88wilhem@gmail.com",
+    "password": "$2b$10$7p1EpiQevpOdd6pgf9mj8..dJCFDNetVvSSMv/HKJrOIdOIM9xi.i"
+  },
+  {
+    "nom": "HO",
+    "email": "wilhem@gmail.com",
+    "password": "$2b$10$jeGjRolcjT0r6YeEAaB/Tejaivze6z/kiIj118hm2wNwL6Py09J6G"
+  },
+  {
+    "nom": "HO",
+    "email": "wilhem@admin.com",
+    "password": "$2b$10$JpXkvQB/JYqSgLB3Hj/aDufCc7wT1RW0jXBB51Ab9B3tuRox8QfGK"
+  },
+  {
+    "nom": "Tom",
+    "email": "Tom@gmail.com",
+    "password": "$2b$10$D7JKHI/dYmG4dKApaWN9V.aBfiDBQN/6gzGqYgp3jN/szF5vk/roS"
+  },
+  {
+    "nom": "Karuran",
+    "email": "Karuran@gmail.com",
+    "password": "$2b$10$Q4uJm94/UYQHj7yBaYk08OnSEnnxAdlLBoJd6YYGqivFMvaAicZ1."
+  },
+  {
+    "nom": "bob",
+    "email": "Bob@yopmail.com",
+    "password": "$2b$10$6ZLSf/7y6cEZu5LI3fGpPeFh7EZDdLEpP31bt.mLBwvpWH5UKzWAq"
+  }
+]
